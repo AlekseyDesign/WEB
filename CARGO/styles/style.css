@@ -1,0 +1,458 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, white 50%, #006cd8 50%);
+    line-height: 1.2;
+}
+@font-face {
+    font-family: Apercupro; /* Гарнитура шрифта */
+    src: url(apercupro-webfont-d96cccc2ebfe45042386bd2367197ade.ttf); /* Путь к файлу со шрифтом */
+    font-style: normal;
+   }
+
+@font-face {
+    font-family: Aud; /* Гарнитура шрифта */
+    src: url(audRkhBolExt.ttf); /* Путь к файлу со шрифтом */
+    font-style: normal;
+   }
+/* теги для гарнитур*/
+h1 {
+ font-family: Aud;
+}
+h2 {
+ font-family: Apercupro;
+}
+/*разделение на два блока*/
+.contents{
+  display: flex;
+  display: -webkit-flex;
+}
+.contentText {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    min-height: 500px;
+    background-size: cover;
+}
+.contentSidebar{
+	position: relative;
+	height: 100%;
+	width: 50%;
+}
+
+/* Текст */
+
+.text_top{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 12px;
+	letter-spacing: 4px;
+}
+.cargo{
+	position: relative;
+	text-align: center;
+	margin-top: -10px;
+	font-size: 130px;
+}
+.moscow{
+	position: relative;
+	top: -20px;
+	text-align: center;
+	font-size: 20px;
+}
+.spektakl{
+  position: relative;
+	text-transform: uppercase;
+	text-align: center;
+  top: 100px;
+	font-size: 23px;
+	letter-spacing: 1.2px;
+}
+.column_top{
+    position: relative;
+	  font-size: 13px;
+  	column-count: 2;
+  	column-gap: 0em;
+  	margin-top: 150px;
+  	margin-left: 20px;
+}
+.numbers{
+  position: relative;
+  top: -10px;
+  left: 18px;
+	font-size: 32px;
+	column-count: 5;
+	column-gap: 10px;
+	margin-left: -30px;
+	margin-top: 50px;
+	text-align: center;
+}
+.words{
+	font-size: 12px;
+	text-transform: uppercase;
+	column-count: 5;
+	position: relative;
+	top: 0px;
+  left: 8px;
+	column-gap: 10px;
+	text-align: center;
+}
+/*КНОПКА КУПИТЬ БИЛЕТ*/
+.buttonBlock{
+	display: flex;
+	justify-content: center;
+}
+.button{
+	color: black;
+	border: 2px solid #000;
+	font-size: 20px;
+	padding: 7px 25px;
+	text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 75px;
+}
+.buttonWhite {
+  background-color: white;
+}
+
+.buttonWhite:hover {
+  background-color: #006cd8;
+  color: white;
+}
+
+.textMiddleTop{
+  position: relative;
+  top: 150px;
+	font-size: 20px;
+	text-align: justify;
+}
+.column_middle{
+  position: relative;
+  align-items: center;
+  top: 150px;
+	font-size: 13px;
+  column-count: 2;
+  column-gap: 0em;
+  margin-top: 40px;
+  text-align: left;
+}
+.pictures {
+  position: relative;
+  top: 190px;
+}
+.geography{
+  position: relative;
+  top: 230px;
+  font-size: 13px;
+	font-size: 13px;
+}
+.goroda{
+  position: relative;
+  top: 245px;
+	font-size: 20px;
+	text-align: center;
+	column-count: 3;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 3px;
+}
+.geography_asia{
+  position: relative;
+  top: 285px;
+  font-size: 13px;
+	font-size: 13px;
+}
+.goroda_asia{
+  position: relative;
+  top: 300px;
+  font-size: 13px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 3px;
+}
+.geography_ruhr{
+  position: relative;
+  top: 340px;
+	font-size: 13px;
+}
+a:link{
+	color: black;
+}
+a:visited{
+	color: black;
+}
+.goroda_ruhr{
+  position: relative;
+  top: 355px;
+	font-size: 20px;
+	column-count: 2;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 3px;
+}
+.citati{
+  position: relative;
+  top: 395px;
+	font-size: 13px;
+}
+/* slider */
+
+.slider {
+    position: relative;
+    top: 415px;
+    height: 45vh;
+    background-color: white;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.sliderText {
+	font-size: 20px;
+	text-align: justify;
+	height: 225px;
+  width: 498px;
+}
+/* КНОПКИ СЛАЙДЕРА */
+
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  margin-top: -190px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url('Dots_Press.png');
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.my-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+.sozdateli{
+  position: relative;
+  top: 330px;
+	font-size: 13px;
+}
+.text_bottom{
+  position: relative;
+  top: 350px;
+	font-size: 20px;
+	text-align: justify;
+}
+.fedor{
+  position: relative;
+  top: 360px;
+	font-size: 20px;
+	text-align: left;
+}
+.probki{
+  position: relative;
+  top: 420px;
+	text-align: center;
+}
+.links{
+  position: relative;
+  top: 470px;
+	font-size: 20px;
+	align-items: center;
+	column-count: 4;
+}
+.bottom_text{
+  position: relative;
+  top: 490px;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+
+.contentSidebar {
+  position: fixed;
+  top:0%;
+  left:0%;
+  z-index: 1;
+}
+
+.contentImg {
+    height: 350px  !important;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contentSidebar-1 {
+    background-image: url(photo.jpg);
+}
+.contentSidebar-2 {
+    background-image: url(photo1.jpg);
+}
+.contentSidebar-3 {
+    background-image: url(photo2.jpg);
+}
+
+.my-dotsImage {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dotsImage li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dotsImage li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dotsImage li button:hover,
+.my-dotsImage li button:focus {
+  outline: none;
+}
+
+.my-dotsImage li button:hover:before,
+.my-dotsImage li button:focus:before {
+  opacity: 1;
+}
+
+.my-dotsImage li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url('Dots_Press.png');
+  text-align: center;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.my-dotsImage li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+.contentradius {
+  position: relative;
+  top: 280px;
+  left:62%;
+  display: flex;
+  width: 300px;
+  height: 170px;
+  background: #006cd8;
+  border: 2px solid white;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+.buttonradius {
+    width: 300px;
+    height: 170px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.podarki {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    margin: 15px;
+    letter-spacing: 1px;
+}
+@media all and (min-width : 1024px) and (max-width : 1280px) {
+    .contents {
+      display: block;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .contents {
+      display: block;
+    }
+}

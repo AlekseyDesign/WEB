@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FLEX</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <style>
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    div {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .item {
+      width: 20%;
+    }
+
+    .thrash { background-image: url(TH9005.jpg); height: 500px;}
+    .supreme { background-image: url(May1990.jpg); height: 100px;}
+    .keds { background-image: url(block14.jpg);}
+
+    </style>
+
+</head>
+<body>
+      <section>
+        <div class="item thrash"></div>
+        <div class="item supreme"></div>
+        <div class="item keds"></div>
+      </section>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GARAGE</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="slick/slick.css">
+</head>
+<body>
+    <header>
+        <div class="linksRow">
+        <a href="" class="linkItem">О Музее</a>
+        <a href="" class="linkItem">Коллкуция</a>
+        <a href="" class="linkItem">Библиотека</a>
+        <a href="" class="linkItem">Издания</a>
+      </div>
+            <div class="search">
+
+            </div>
+    </header>
+
+    <section class="intro">
+      <div class="introRow--white"></div>
+      <div class="introRow--mint">
+      <div class ="introImg"></div>
+      <h3 class="introText">Инсталляция Инь Сючжэнь</h3>
+      </div>
+    </section>
+
+
+<section class="slider">
+    <div class="sliderImg slider-1"></div>
+    <div class="sliderImg slider-2"></div>
+    <div class="sliderImg slider-3"></div>
+    <div class="sliderImg slider-4"></div>
+    <div class="sliderImg slider-5"></div>
+    <div class="sliderImg slider-6"></div>
+
+</section>
+
+
+
+
+<!-- popup -->
+<div class="layer">
+    <button class="close">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </button>
+<input type="text" class="popupInput" placeholder="текст по умолчанию">
+</div>
+
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+    $('.search').on('click', function(){
+        $('.layer').fadeIn('fast');
+    });
+
+    $('.close').on('click', function(){
+        $('.layer').fadeOut('slow');
+    });
+
+    $('.slider').slick();
+
+  });
+  </script>
+
+</body>
+</html>

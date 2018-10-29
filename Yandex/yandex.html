@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yandex</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+</head>
+<body>
+
+    <header class="links"></header>
+    <nav class="silki">
+      <a class="silki-link" href="https://yandex.ru/company/" target="_blank">КОМПАНИЯ</a>
+      <a class="silki-link" href="https://yandex.ru/jobs/?cities=213" target="_blank">ВАКАНСИИ</a>
+      <a class="silki-link" href="https://yandex.ru/blog/company" target="_blank">БЛОГ</a>
+      <a class="silki-link" href="https://academy.yandex.ru/" target="_blank">ОБУЧЕНИЕ</a>
+    </nav>
+
+    <div class="fixedImg"></div>
+
+    <section class="vacancy">
+      <h1 class="vacancyTitle">Разработчик инфраструктуры высоконагруженных систем</h1>
+      <p class="vacancyDesc">Многие инструменты в Яндексе работают с колоссальными объёмами информации. Сотни миллиардов ссылок, десятки петабайт данных — таковы система управления кластером, поисковый runtime и другие компоненты, от которых зависят надёжность и производительность Поиска.</p>
+      <p class="vacancyDesc">Такую же проверку на прочность миллионами запросов испытывают ежедневно Маркет, Карты, Метрика, баннерокрутилка Яндекса, платформа распределённых вычислений YT. Каждая из этих систем содержит множество взаимосвязанных компонентов с очень высокими требованиями к производительности, отказоустойчивости и надёжности.</p>
+      <p class="vacancyDesc">Если вам интересно работать над такими решениями для масштабных проектов — обратите внимание на эту позицию. Здесь предстоит проектировать высоконагруженные отказоустойчивые системы и сталкиваться с действительно интересными инженерными задачами.</p>
+    </section>
+
+    <section class="vacancy">
+      <h1 class="vacancyTitle">Разработчик инфраструктуры высоконагруженных систем</h1>
+      <p class="vacancyDesc">Многие инструменты в Яндексе работают с колоссальными объёмами информации. Сотни миллиардов ссылок, десятки петабайт данных — таковы система управления кластером, поисковый runtime и другие компоненты, от которых зависят надёжность и производительность Поиска.</p>
+      <p class="vacancyDesc">Такую же проверку на прочность миллионами запросов испытывают ежедневно Маркет, Карты, Метрика, баннерокрутилка Яндекса, платформа распределённых вычислений YT. Каждая из этих систем содержит множество взаимосвязанных компонентов с очень высокими требованиями к производительности, отказоустойчивости и надёжности.</p>
+      <p class="vacancyDesc">Если вам интересно работать над такими решениями для масштабных проектов — обратите внимание на эту позицию. Здесь предстоит проектировать высоконагруженные отказоустойчивые системы и сталкиваться с действительно интересными инженерными задачами.</p>
+    </section>
+
+    <section class="formSection"></section>
+
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      var windowBottom = 0;
+      var windowH = $(window).height();
+      var documentH = $(document).height();
+
+      window.onscroll = function () {
+        windowBottom = $(window).scrollTop() + windowH;
+
+        if ( (windowBottom > (documentH / 3)) && (windowBottom < (documentH * 2 / 3)) ) {
+            $('.fixedImg').css('background-image', 'url(orig2.jpg)');
+          } else if (windowBottom > (documentH * 2 / 3)) {
+            $('.fixedImg').css('background-image', 'url(orig.jpg)')
+          } else {
+            $('.fixedImg').css('background-image', 'url(orig3.jpg)') }
+      }
+
+        })
+    </script>
+
+
+  </body>
+  </html>

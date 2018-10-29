@@ -1,0 +1,125 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;}
+
+.blocksSection {
+  display: flex;
+  height: 100vh;
+}
+
+.block {
+  width: 50%;
+  height: 100%;
+  min-height: 500px;
+  background-size: cover;
+  display: flex;
+}
+
+.block1 {background-image: url(../1.jpg);}
+.block2 {background-image: url(../2.jpg);}
+
+
+.button {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  text-decoration: none;
+}
+
+.buttonWhite {
+  background-color: white;
+  color: red;}
+
+.buttonRed {
+  background-color: red;
+  color: white;}
+
+.buttonWhite:hover {
+  background-color: red;
+  color: white;}
+
+.buttonRed:hover {
+  background-color: white;
+  color: red;}
+
+.buttonText {
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;}
+
+
+
+    /* bookSection */
+
+.bookSection {
+    height: 690px;
+    background: #0066FA;
+}
+
+.logoRow {
+    padding: 20px 0;
+}
+
+.logoImg {
+    width: 384px;
+    height: 136px;
+    background-image: url(../strelka-sprite.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -251px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.logoImg:hover {
+  background-position: 0 -387px;
+}
+
+.booksRow {
+    padding: 20px 0;
+    font-size: 0;
+    overflow-x: scroll;
+}
+
+.booksInner {
+    width: 3090px;
+}
+
+.book {
+  width: 300px;
+  height: 450px;
+  display: inline-block;
+  background: steelblue;
+  margin-right: 10px;
+  background-size: cover;
+}
+
+.book:last-child {
+    margin-right: 0;
+}
+
+.norman {
+    background-image: url(../norman.jpg);
+    }
+
+.vegas {
+    background-image: url(../las-vegas.jpg);
+    }
+
+.belyaevo {
+      background-image: url(../kuba-snopek.jpg);
+      }
+
+.russiancovers {
+      background-image: url(../russiancovers.jpg);
+      }
+
+@media all and (max-width : 700px) {
+  .blocksSection {
+      display: block;
+  }
+  .block {
+      width: 100%;
+  }
+}
