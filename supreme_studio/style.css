@@ -1,0 +1,16 @@
+body{
+    height: 2000px;
+    font-family:
+    Font,
+    WF-000001-000028-000151-5a96bf5f3406b30ed2910ae5e8ec4e42.ttf;
+}
+
+.p-0{
+
+    padding: 0;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    height: 50px;
+    width: 50px;
+}
