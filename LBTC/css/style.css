@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Favorit_Expanded',
+    src: url('../font/roboto/Favorit_Expanded.ttf');
+}
+body {
+    font-family: 'Favorit_Expanded';
+}
+html,body,header, #intro {
+	height: 100%;
+}
+#intro{
+	background: url(../img/new-menswear-brands-january-2-lbtc-1.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.top-nav-collapse{
+	background-color: black;
+}
+.nav-link{
+	color: white;
+}
+@media (max-width: 768px) {
+	.navbar:not(.top-nav-collapse){
+		background: #black;
+	}
+}
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
